@@ -1,0 +1,74 @@
+html {
+
+}
+body {
+
+}
+.header {
+
+}
+/* nested w/in header */
+.logo {
+
+}
+.links{
+
+}
+/* line break means out of nest */
+
+.intro {
+
+}
+/* nested w/in intro */
+.intro-words {
+
+}
+.intro-words-big-text {
+
+}
+.intro-words-paragraph {
+
+}
+.intro-sign-up-button {
+
+}
+.intro-image {
+
+}
+
+.gallery {
+
+}
+/* nested w/in gallery */
+.gallery-images {
+
+}
+
+.quote {
+
+}
+/* nested w/in quote */
+.quote-text {
+
+}
+.quote-cite {
+
+}
+
+.c2a {
+
+}
+/* nested w/in c2a */
+.c2a-left-text {
+
+}
+.c2a-left-text .left-text-header {
+
+}
+.c2a-left-text .left-text-text {
+
+}
+
+.footer {
+    
+}
