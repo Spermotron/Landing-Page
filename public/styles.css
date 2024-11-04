@@ -42,6 +42,7 @@ li {
 /* nested w/in intro */
 .intro-words {
     padding: 0 64px;
+    width: 500px;
 }
 .intro-words-big-text {
     font-size: 48px;
