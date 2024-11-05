@@ -1,9 +1,13 @@
-html {
+html,body {
     font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 body {
     /* flex: row */
+    height: 100vh;
     display:flex
     flex-direction: column;
 }
@@ -11,10 +15,12 @@ body {
     background-color: #1F2937;
     color: #F9FAF8;
 }
+.header,.intro,.gallery,.quote,.c2a,.footer {
+    padding: 0 20vh;
+}
 .header {
     display:flex;
     align-items: baseline;
-    padding: 0 64px;
 }
 /* nested w/in header */
 .logo {
@@ -38,11 +44,21 @@ li {
 .intro {
     /* flex: row */
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 25vh;
+
 }
 /* nested w/in intro */
 .intro-words {
-    padding: 0 64px;
-    width: 500px;
+    /* flex: column */
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    word-wrap: wrap;
+    flex:1;
+    gap: 2vh;
 }
 .intro-words-big-text {
     font-size: 48px;
@@ -55,8 +71,17 @@ li {
 .intro-sign-up-button {
 
 }
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-radius: 12px;
+    padding: 8px 36px;
+}
 .intro-image {
-
+    margin-left: 32px;
+    flex: 1;
 }
 
 .gallery {
@@ -67,19 +92,43 @@ li {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 24px;
+
+    padding: 24px 25vh 64px 25vh;
 }
 /* nested w/in gallery */
 .gallery-images {
     /* flex: row */
     display: flex;
-}
+    gap: 24px;
 
+}
+/* nested w/in gallery-images */
+.image {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-color: #3882F6;
+    border-width: 4px;
+    border-style:inset;
+    border-radius: 10px;
+    padding: 8px;
+}
+/* nested w/in images */
+.caption {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
 .quote {
     background-color: #E5E7EB;
     /* flex: column */
     display: flex;
     flex-direction: column;
+    padding: 25vh;
+
 }
 /* nested w/in quote */
 .quote-text {
@@ -90,25 +139,40 @@ li {
 .quote-cite {
     font-weight: bold;
     font-size: 24px;
+    align-self: flex-end;
+    margin-right: 36px;
+    padding-top: 16px;
 }
 
 .c2a {
     background-color: #3882F6;
     color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 20vh;
+    padding: 36px;
+    border-radius: 15px;
+    gap: 32px;
 }
 /* nested w/in c2a */
 .c2a-left-text {
-
 }
 .c2a-left-text .left-text-header {
+    font-weight: bold;
+    font-size: 24px;
 
 }
 .c2a-left-text .left-text-text {
-
+    font-size: 18px;
 }
-
+.c2a-sign-up-button .button {
+    border-color: #F9FAF8;
+    border-width: 4px;
+}
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 24px;
 }
